@@ -14,7 +14,37 @@ class resultActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(binding.root)
 
+        with(binding) {
 
+            val bundle = intent.extras
+            if (bundle != null) {
+
+                val height = bundle.getFloat("height")
+                val weight = bundle.getFloat("weight")
+
+                val result = weight / (height * height)
+
+                tvHeight.text = "Your height is: $height"
+                tvWeight.text = "Your Weight is: $weight"
+                tvResult.text = "Your BMI is: $result"
+
+                val classification = if (result <= 18.5f) {
+                    "UNDERWEIGHT"
+
+                } else if (result > 18.5f && result <= 24.9) {
+                    "NORMAL"
+                } else if (result >= 25f && result <= 29.9) {
+                    "OVERWEIGHT"
+                } else {
+                    "OBESE"
+                }
+
+                tvClassification.text = classification
+
+            }
+
+
+        }
 
 
     }
