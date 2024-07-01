@@ -26,7 +26,7 @@ class resultActivity : AppCompatActivity() {
 
                 tvHeight.text = "Your height is: $height"
                 tvWeight.text = "Your Weight is: $weight"
-                tvResult.text = "Your BMI is: $result"
+                tvResult.text = "$result"
 
                 val classification = if (result <= 18.5f) {
                     "UNDERWEIGHT"
