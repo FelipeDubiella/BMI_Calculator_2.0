@@ -1,4 +1,4 @@
-# BMI Calcalator made done on your own
+# BMI Calculator done on your own
 This project BMI Calculator project, developed in Kotlin, helps users to quickly determine their BMI and understand their weight category, such as underweight, normal weight, overweight, obese class 1 or obese class 2. The app features a clean and responsive interface
 
 ## 📸 Screenshots
